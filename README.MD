@@ -9,9 +9,14 @@ to communicate with SingleFile.
 
 ## Install
 
-- Download from the [`install`](install/) folder the zip file corresponding to
-  your OS and your browser. For example, if you're using Chome on Linux,
-  download [`install/chromium-linux.zip`](install/chromium-linux.zip)
+- Download the zip file corresponding to your OS and your browser:
+
+  - Chrome, Linux: [`install/chromium-linux.zip`](install/chromium-linux.zip)
+  - Chrome, Windows: [`install/chromium-win.zip`](install/chromium-win.zip)
+  - Chrome, macOS: [`install/chromium-mac.zip`](install/chromium-mac.zip)
+  - Firefox, Linux: [`install/firefox-linux.zip`](install/firefox-linux.zip)
+  - Firefox, Windows: [`install/firefox-win.zip`](install/firefox-win.zip)
+  - Firefox, macOS: [`install/firefox-mac.zip`](install/firefox-mac.zip)
 
 - Unzip the file in an empty folder somewhere on your disk an run `install`
 
