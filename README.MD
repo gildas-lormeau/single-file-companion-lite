@@ -11,12 +11,12 @@ to communicate with SingleFile.
 
 - Download the zip file corresponding to your OS and your browser:
 
-  - Chrome, Linux: [`install/chromium-linux.zip`](install/chromium-linux.zip)
-  - Chrome, Windows: [`install/chromium-win.zip`](install/chromium-win.zip)
-  - Chrome, macOS: [`install/chromium-mac.zip`](install/chromium-mac.zip)
-  - Firefox, Linux: [`install/firefox-linux.zip`](install/firefox-linux.zip)
-  - Firefox, Windows: [`install/firefox-win.zip`](install/firefox-win.zip)
-  - Firefox, macOS: [`install/firefox-mac.zip`](install/firefox-mac.zip)
+  - Chrome, Linux: [`chromium-linux.zip`](install/chromium-linux.zip)
+  - Chrome, Windows: [`chromium-win.zip`](install/chromium-win.zip)
+  - Chrome, macOS: [`chromium-mac.zip`](install/chromium-mac.zip)
+  - Firefox, Linux: [`firefox-linux.zip`](install/firefox-linux.zip)
+  - Firefox, Windows: [`firefox-win.zip`](install/firefox-win.zip)
+  - Firefox, macOS: [`firefox-mac.zip`](install/firefox-mac.zip)
 
 - Unzip the file in an empty folder somewhere on your disk an run `install`
 
