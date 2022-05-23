@@ -1,0 +1,12 @@
+{
+    "name": "singlefile_companion",
+    "description": "SingleFile Companion Lite",
+    "path": "singlefile_companion_lite",
+    "type": "stdio",
+    "allowed_origins": [
+        "chrome-extension://mpiodijhokgodhhofbcjdecpffjipkle/",
+        "chrome-extension://efnbkdcfmcmnhlkaijjjmhjjgladedno/",
+        "chrome-extension://pfocgciignlhlijcdpkbhmioobagfpmd/",
+        "chrome-extension://ophkgdgpbdemngnakdmengfmgpnkgbmg/"
+    ]
+}
