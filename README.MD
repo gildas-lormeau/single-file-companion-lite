@@ -1,7 +1,7 @@
 # SingleFile Companion Lite
 
 SingleFile Companion Lite is a program that runs outside the browser. It allows
-you to save pages in another folder than the browser download folder.
+you to save pages in another folder than the browser's download folder.
 
 It uses the
 [Native Messaging API](https://developer.mozilla.org/docs/Mozilla/Add-ons/WebExtensions/Native_messaging)
