@@ -74,7 +74,7 @@ async function parseMessage() {
 
 async function savePage(pageData, options) {
 	try {
-		await Deno.mkdir(resolve(BASE_PATH, options.savePath || DOWNLOADS_PATH));
+		await Deno.mkdir(resolve(BASE_PATH, options.savePath || DOWNLOADS_PATH), { recursive: true });
 	} catch (error) {
 		// ignored
 	}
