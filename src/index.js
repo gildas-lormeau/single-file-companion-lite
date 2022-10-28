@@ -82,11 +82,11 @@ async function savePage(pageData, options) {
 }
 
 async function handleError(error, options) {
-	const errorMessage = new TextEncoder().encode(error.message + "\n");
 	if (options.errorFilePath) {
 		const message = error.message + "\n" + error.stack + "\n";
 		await Deno.writeTextFile(resolve(BASE_PATH, options.errorFilePath), message, { append: true });
 	}
-	await Deno.stdout.write(new Uint32Array([errorMessage.length]));
+	const errorMessage = new TextEncoder().encode(JSON.stringify({ error: error.toString() }));
+	await Deno.stdout.write(new Uint8Array(new Uint32Array([errorMessage.length]).buffer));
 	await Deno.stdout.write(errorMessage);
 }
