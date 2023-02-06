@@ -50,7 +50,7 @@ async function main() {
 async function parseOptions() {
 	try {
 		return JSON.parse(await Deno.readTextFile(resolve(BASE_PATH, OPTIONS_FILE_PATH)));
-	} catch (error) {
+	} catch (_error) {
 		return {};
 	}
 }
@@ -79,7 +79,7 @@ async function savePage(pageData, options) {
 	const basePath = resolve(BASE_PATH, options.savePath || DOWNLOADS_PATH, fileDirectory);
 	try {
 		await Deno.mkdir(basePath, { recursive: true });
-	} catch (error) {
+	} catch (_error) {
 		// ignored
 	}
 	await Deno.writeTextFile(fileDirectory, pageData.content);
