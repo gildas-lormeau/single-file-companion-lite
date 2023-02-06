@@ -1,3 +1,5 @@
+#!/usr/bin/env -S deno run --allow-write --allow-read
+
 /*
  * Copyright 2022 Gildas Lormeau
  * contact : gildas.lormeau <at> gmail.com
@@ -23,7 +25,7 @@
 
 /* global Deno, TextDecoder, TextEncoder */
 
-import { resolve } from "https://deno.land/std/path/mod.ts";
+import { resolve, parse } from "https://deno.land/std@0.175.0/path/mod.ts";
 
 const BASE_PATH = ".";
 const BUFFER_SIZE = 1024 * 512;
@@ -73,12 +75,14 @@ async function parseMessage() {
 }
 
 async function savePage(pageData, options) {
+	const fileDirectory = parse(pageData.filename).dir;
+	const basePath = resolve(BASE_PATH, options.savePath || DOWNLOADS_PATH, fileDirectory);
 	try {
-		await Deno.mkdir(resolve(BASE_PATH, options.savePath || DOWNLOADS_PATH), { recursive: true });
+		await Deno.mkdir(basePath, { recursive: true });
 	} catch (error) {
 		// ignored
 	}
-	await Deno.writeTextFile(resolve(BASE_PATH, options.savePath || DOWNLOADS_PATH, pageData.filename), pageData.content);
+	await Deno.writeTextFile(fileDirectory, pageData.content);
 }
 
 async function handleError(error, options) {
