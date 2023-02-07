@@ -25,7 +25,7 @@
 
 /* global Deno, TextDecoder, TextEncoder */
 
-import { resolve, parse, relative } from "https://deno.land/std/path/mod.ts";
+import { resolve, parse, relative } from "https://deno.land/std@0.175.0/path/mod.ts";
 
 const BASE_PATH = ".";
 const BUFFER_SIZE = 1024 * 512;
@@ -50,7 +50,7 @@ async function main() {
 async function parseOptions() {
 	try {
 		return JSON.parse(await Deno.readTextFile(resolve(BASE_PATH, OPTIONS_FILE_PATH)));
-	} catch (error) {
+	} catch (_error) {
 		return {};
 	}
 }
