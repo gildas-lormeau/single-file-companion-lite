@@ -82,7 +82,7 @@ async function savePage(pageData, options) {
 	} catch (_error) {
 		// ignored
 	}
-	await Deno.writeTextFile(resolve(basePath,relative(fileDirectory, pageData.filename)), pageData.content);
+	await Deno.writeTextFile(resolve(basePath, relative(fileDirectory, pageData.filename)), pageData.content);
 }
 
 async function handleError(error, options) {
