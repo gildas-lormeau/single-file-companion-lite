@@ -19,6 +19,7 @@ to communicate with [SingleFile](https://github.com/gildas-lormeau/SingleFile).
   - Firefox, macOS: [`firefox-mac.zip`](install/firefox-mac.zip)
 
 - Unzip the file in an empty folder somewhere on your disk an run `install`
+- Note: for *nix installs, you will need to 'chmod +x' for the install, uninstall, and SingleFileCompanionLite executables
 
 - Enable the option `Destination > save with SingleFile Companion` in SingleFile
 
